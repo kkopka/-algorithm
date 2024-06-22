@@ -13,6 +13,7 @@ public class BinarySearchTests {
 
     @Test(dataProvider = "binarySearchDataProvider")
     public void binarySearchPosTests(int[] arr, int searchNumber, int expectedIndex) {
+        System.out.println();
         assertEquals(binarySearch.search(arr, searchNumber), expectedIndex);
     }
 
