@@ -1,13 +1,12 @@
 package ru.learning.binary.search;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.learning.SelectionSort;
 
 import java.util.Arrays;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 @Test
 public class SelectionSortTests {
@@ -16,7 +15,7 @@ public class SelectionSortTests {
 
     @Test(dataProvider = "selectionSortDataProvider")
     public void selectionSortTest(int[] arr, int[] expected) {
-        assertEquals(true, Arrays.equals(selectionSort.sort(arr), expected));
+        assertTrue(Arrays.equals(selectionSort.sort(arr), expected));
     }
 
 
